@@ -2,40 +2,68 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TNG CAFE</title>
     <link rel="stylesheet" href="test.css">
 </head>
 <body>
-    <h1>TNG CAFE</h1>
-    <p>心安らぐ一杯をあなたに</p>
+    <header>
+        <h1>TNG CAFE</h1>
+        <p>心安らぐ一杯をあなたに</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <ul>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>TNGCafeは自然の香りに包まれたリラックス空間を提供しています。</p>
+            <p>自家焙煎コーヒーと手作りスイーツで、穏やかな時間をお過ごしください。</p>
+            <img src="cafe.jpg" alt="カフェの写真">
+        </section>
 
-    <h2 id="about">About Us</h2>
-    <p>TNGCafeは自然の香りに包まれたリラックス空間を提供しています。</p>
-    <p>自家焙煎コーヒーと手作りスイーツで、穏やかな時間をお過ごしください。</p>
-    <img src="cafe.jpg" alt="カフェの写真">
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="menu-list">
+                <article class="menu-card">
+                    <img src="coffee.jpg" alt="コーヒー">
+                    <p>ブレンドコーヒー</p>
+                </article>
+                <article class="menu-card">
+                    <img src="cake.jpg" alt="ケーキ">
+                    <p>ベイクドチーズケーキ</p>
+                </article>
+                <article class="menu-card">
+                    <img src="latte.jpg" alt="ラテ">
+                    <p>カフェラテ</p>
+                </article>
+            </div>
+        </section>
 
-    <h2 id="menu">Menu</h2>
-    <img src="coffee.jpg" alt="コーヒー">
-    <p>ブレンドコーヒー</p>
-    <img src="cake.jpg" alt="ケーキ">
-    <p>ベイクドチーズケーキ</p>
-    <img src="latte.jpg" alt="ラテ">
-    <p>カフェラテ</p>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="#" method="post">
+                <label>お名前：
+                    <input type="text" name="name">
+                </label>
+                <label>メールアドレス：
+                    <input type="email" name="email">
+                </label>
+                <label>お問い合わせ内容：
+                    <textarea name="message"></textarea>
+                </label>
+                <input type="submit" value="送信">
+            </form>
+        </section>
+    </main>
 
-    <h2 id="contact">Contact</h2>
-    <form action="#" method="post">
-        <label>お名前： <input type="text" name="name"></label>
-        <label>メールアドレス： <input type="email" name="email"></label>
-        <label>お問い合わせ内容： <textarea name="message"></textarea></label>
-        <input type="submit" value="送信">
-    </form>
-
-    <p>&copy; 20xx TNG Cafe</p>
+    <footer>
+        <p>&copy; 20xx TNG Cafe</p>
+    </footer>
 </body>
 </html>
